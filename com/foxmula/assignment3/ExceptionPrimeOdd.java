@@ -1,7 +1,12 @@
   
 package com.foxmula.assignment3;
 import java.util.Scanner;
-
+class InvalidNumber extends Exception {
+	InvalidNumber(String s)
+	{
+		super(s);
+	}
+}
 public class ExceptionPrimeOdd {
 	static boolean isPrime(int num)
 	{
